@@ -9,7 +9,7 @@ class Contact extends React.Component{
           <h1>Contact Us</h1>
           <h4>The party is near! Contact us, if you want to book tickets or get the information.</h4>
           <form>
-            <div className="form-one">
+            <div className="formu">
               <label>
                 <input type="text" value="Nom" />
               </label>
@@ -17,7 +17,7 @@ class Contact extends React.Component{
                 <input type="text" value="Prénom" />
               </label>
             </div>
-            <div className="form-two">
+            <div className="formu">
               <label>
                 <input type="text" value="Nom" />
               </label>
