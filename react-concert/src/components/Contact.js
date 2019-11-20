@@ -25,7 +25,9 @@ class Contact extends React.Component{
                 <input type="text" value="Prénom" />
               </label>
             </div>
+            <button type="submit">SEND</button>
           </form>
+          
         </div>
         <div className="contact-maps"></div>
       </div>
