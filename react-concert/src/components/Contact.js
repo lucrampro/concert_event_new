@@ -2,6 +2,17 @@ import React from 'react';
 import '../contact.css';
 
 class Contact extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {modifyOn : false, txt: props.txt}
+  }
+  mofifElement(){
+    this.setState({modifyOn : true})
+  }
+  handlerChange(event){
+    console.log(event.target.value);
+    this.setState({txt : event.target.value})
+  }
   render(){
     return(
       <div className="contact">
@@ -11,7 +22,7 @@ class Contact extends React.Component{
           <form>
             <div className="formu">
               <label>
-                <input type="text" value="Nom" />
+                <input type="text" value={this.state.txt}  onChange={this.handlerChange.bind(this)}/>
               </label>
               <label>
                 <input type="text" value="Prénom" />
@@ -46,6 +57,9 @@ class Contact extends React.Component{
       </div>
     )
   }
+}
+Contact.defaultProps = {
+  txt : 'Nom'
 }
 
 export default Contact;
