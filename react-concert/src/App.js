@@ -8,15 +8,14 @@ import {
 } from "react-router-dom";
 // import des components
 import Menu from "./components/Menu";
+import Concert from "./components/Concert";
 // Classe App
 function App() {
   return (
     <div className="App">
       <Router>
         <Menu />
-        <Route path="/">
-            <App />
-        </Route>
+        <Route path="/" exact component={Concert} />
       </Router>
     </div>
   );
