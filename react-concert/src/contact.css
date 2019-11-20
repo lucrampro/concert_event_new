@@ -1,0 +1,26 @@
+:root{
+  /* Text */
+  --text-one: 70px;
+  --text-two: 24px;
+  --text-tree: 18px;
+  --text-four: 14px;
+}
+
+
+.contact{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  border: 1px solid red;
+}
+.contact-text{
+  border: 1px solid orange;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+h1{
+  font-size: var(--text-one)
+}
+h4{
+  font-size: var(--text-tree);
+}
