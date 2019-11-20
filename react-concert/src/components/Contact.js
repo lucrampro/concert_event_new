@@ -27,7 +27,20 @@ class Contact extends React.Component{
             </div>
             <button type="submit">SEND</button>
           </form>
-          
+          <div className="contact-info">
+            <div className="info-text">
+              <h3>Adresse</h3>
+              <p>200 N. Spring Street Los Angeles CA 90012</p>
+            </div>
+            <div className="info-text">
+              <h3>Phone</h3>
+              <p>8-800-472-193-283</p>
+            </div>
+          </div>
+          <div className="info-text move">
+            <h3>Email</h3>
+            <p>concert-event@gmail.com</p>
+          </div>
         </div>
         <div className="contact-maps"></div>
       </div>
