@@ -5,23 +5,25 @@ import '../styles/concert.scss'
 class Concert extends React.Component{
     // constructor
         state = {
-            title: 'Concert Event',
-            ville: 'Fontenay Sous Bois',
-            date: '5-7 Novembre',
-            text: 'Great show with the participation of famous music groups and singers. It will be the best weekend!',
-            button: 'NOTIFY ME'
+            data:{
+                title: 'Concert Event',
+                ville: 'Fontenay Sous Bois',
+                date: '5-7 Novembre',
+                text: 'Great show with the participation of famous music groups and singers. It will be the best weekend!',
+                button: 'NOTIFY ME'
+            }
         }
     // render
     render (){
-        const data = this.state
+        const info = this.state.data
         return (
             <div className="Concert">
                 <div className="wrapper__content">
-                    <h1> { data.title} </h1>
-                    <h2 className="concert__date"> { data.date } </h2>
-                    <h2 className="concert__ville"> { data.ville } </h2>
-                    <p> { data.text } </p>
-                    <button> { data.button } </button>
+                    <h1> { info.title} </h1>
+                    <h2 className="concert__date"> { info.date } </h2>
+                    <h2 className="concert__ville"> { info.ville } </h2>
+                    <p> { info.text } </p>
+                    <button> { info.button } </button>
                 </div>
             </div>
         )
